@@ -1,0 +1,32 @@
+.component-heading{
+    color: #345095;
+    padding: 0px 25px;
+}
+
+.storage-option{
+    display: flex;
+    margin: 10px 4px; 
+    padding: 4px; 
+    width: 100%; 
+    overflow: auto; 
+    white-space: nowrap;
+}
+
+.option-div{
+    display: grid;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.outer-div{
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add-file-div{
+    font-size: 12px;
+    font-weight: 600;
+    color: #5d6373;
+    text-align: center;
+}
+

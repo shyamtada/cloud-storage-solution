@@ -1,0 +1,20 @@
+.bottom-drawer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    position: fixed;
+    background: rgb(255, 255, 255);
+    border-radius: 0px;
+    box-shadow: 0px 4px 14px 0px rgba(166, 179, 194, 0.3);
+}
+
+.bottom-drawer .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
+    padding-top: 0px;
+    padding-bottom: 33px !important;
+}
+
+.MuiBottomNavigation-root{
+    height: 82px !important;
+}

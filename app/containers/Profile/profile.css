@@ -1,0 +1,37 @@
+.edit-icon{
+    margin: auto 20px;
+    height: 20px;
+    float: right;
+}
+
+.arrow-icon{
+    margin: auto 0px;
+    height: 25px;
+    float: right;
+}
+
+.inner-div{
+    padding: 0px 25px;
+}
+
+.inner-div .MuiLinearProgress-barColorPrimary {
+    background-color: #ff6aa2;
+}
+
+.border-div{
+    border: 2px solid #ff5998;
+    border-radius: 22px;
+    color: #ff5998;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.profile-function-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    background-color: #f5f7fc;
+    padding: 12px;
+    border-radius: 7px;
+}

@@ -1,0 +1,20 @@
+.donut-storage-amt{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.file-color-div{
+    margin: auto;
+    height: 16px;
+    width: 16px;
+    -webkit-border-radius: 31px 40px;
+    -moz-border-radius: 31px / 40px;
+}
+
+.file-type-font{
+    font-size: 15px;
+    font-weight: 600;
+    color:#5d6373;
+}

@@ -1,0 +1,27 @@
+.bg-img{
+    height: 100vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+.info-text{
+    color: #3c64c7;
+    font-family: 'Montserrat', sans-serif; /* AvenirNext-DemiBold was paid so I have used closest match*/
+    font-size: 24px;
+    font-weight: 600;
+    text-align: right;
+    position: absolute;
+    bottom: 90px;
+    left: 20%;
+    right: 30px;
+}
+
+.next-arrow-img{
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+}
