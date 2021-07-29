@@ -19,7 +19,7 @@ export default function Notification() {
 
     return (
         <MobileView style={{ height: '100vh' }}>
-            <div className="outer-div" style={{ paddingBottom: '65px' }}>
+            <div className="outer-div" style={{ paddingBottom: '95px' }}>
                 <HeaderWave color="#e8efff" />
                 <h1 className="h1-font component-heading">Notifications</h1>
                 <div style={{ textAlign: 'center', marginTop: '25%' }}>

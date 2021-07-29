@@ -87,7 +87,7 @@ export default function Profile() {
 
     return (
         <MobileView style={{ height: '100vh' }}>
-            <div className="outer-div" style={{ paddingBottom: '65px' }}>
+            <div className="outer-div" style={{ paddingBottom: '95px' }}>
                     <HeaderWave color="#e8efff"/>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <h1 className="h1-font component-heading">Profile</h1>

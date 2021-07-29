@@ -122,7 +122,7 @@ export default function StorageManagement() {
 
     return (
         <MobileView style={{ height: '100vh' }}>
-            <div className="outer-div" style={{ paddingBottom: '65px' }}>
+            <div className="outer-div" style={{ paddingBottom: '95px' }}>
                 <HeaderWave color="#e8efff"/>
                 <Grid container>
                     <Grid item xs={2} style={{ margin: 'auto', paddingLeft: '25px' }}>

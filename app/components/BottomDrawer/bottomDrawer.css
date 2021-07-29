@@ -18,3 +18,9 @@
 .MuiBottomNavigation-root{
     height: 82px !important;
 }
+
+.bottom-drawer .MuiBottomNavigationAction-root.Mui-selected {
+    color: #3f51b5;
+    padding-top: 0px;
+    padding-bottom: 33px !important;
+}
