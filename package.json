@@ -81,6 +81,7 @@
     "browser-image-compression": "^1.0.12",
     "canvas-qrcode-logo": "^1.1.1",
     "chalk": "2.4.2",
+    "chart.js": "^3.5.0",
     "chartjs": "^0.3.24",
     "compression": "1.7.4",
     "connected-react-router": "6.4.0",
