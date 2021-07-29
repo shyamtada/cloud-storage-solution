@@ -10,7 +10,7 @@ import { browserRedirect } from '../../helpers/helpers';
 
 import './onboardScreen.css';
 
-const onboardBackground = require('../../images/illustration.png');
+const onboardBackground = require('../../images/onboardBackground.png');
 const nextArrow = require('../../images/nextArrow.png');
 
 
