@@ -23,6 +23,7 @@ import './storageManagement.css';
 
 const options = {
     percentageInnerCutout: 50,
+    rotation: Math.PI * 0.5,
     events: [],
     legend: {
         display: false,
@@ -37,10 +38,11 @@ const options = {
 
 
 const data = {
+    rotation: Math.PI * 0.5,
     datasets: [
         {
-            data: [20, 15, 20, 10, 20, 15],
-            backgroundColor: ['rgb(0, 188, 212, 0.2)', 'rgb(218, 93, 245, 0.5)', 'rgb(33, 150, 243, 0.5)', 'rgb(255, 193, 7, 0.5)', 'rgb(74, 195, 103,0.5)', 'rgb(141, 110, 99, 0.5)'],
+            data: [10, 20, 15, 20, 15, 20],
+            backgroundColor: ['rgb(255, 193, 7, 0.5)', 'rgb(74, 195, 103,0.5)', 'rgb(141, 110, 99, 0.5)', 'rgb(0, 188, 212, 0.2)', 'rgb(218, 93, 245, 0.5)', 'rgb(33, 150, 243, 0.5)'],
         }
     ]
 };
