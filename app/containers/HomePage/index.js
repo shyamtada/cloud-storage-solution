@@ -75,12 +75,24 @@ const folder_data = [
 export default function HomePage() {
 
     const [view, selectView] = useState('Folder');
+    const [filteredDataField, setFilteredDataField] = useState('');
+
+    const handleChange = (title) => {
+        setFilteredDataField(title);
+    }
+
+    const lowercasedFilterDataField = filteredDataField.toLowerCase();
+    let filteredDataFields = folder_data.filter(item => {
+        return Object.keys(item).some(title =>
+            item['title'].toLowerCase().includes(lowercasedFilterDataField)
+        );
+    });
 
     const Folders = () => {
         return (
             <Grid container style={{ margin: '25px 0px' }}>
                 {
-                    folder_data.map((data, index) => {
+                    filteredDataFields.map((data, index) => {
                         return (
                             <Grid item xs={6} style={{ padding: '10px', height: '150px' }} key={data.id}>
                                 <div className="folder-div">
@@ -147,7 +159,7 @@ export default function HomePage() {
                     </div>
                 </SGrid.Column>
                 <div className="container home-page-container">
-                    <SearchBar />
+                    <SearchBar handleChange={handleChange}/>
                     <Grid container style={{ borderBottom: '1px solid #d3d7e0' }}>
                         <Grid item xs={6} style={{ padding: '25px 0px 16px 0px' }} className={`tab-switch ${view == 'Files' ? 'tab-selected' : ""}`} onClick={() => { selectView('Files') }}>
                             FILES

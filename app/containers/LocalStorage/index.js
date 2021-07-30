@@ -84,6 +84,7 @@ const files = [
 
 export default function LocalStorage({ addFiles }) {
     const [isOpen, setOpen] = React.useState(addFiles);
+    const [filteredDataField, setFilteredDataField] = useState('');
 
     useEffect(() => {
         if(addFiles){
@@ -91,10 +92,22 @@ export default function LocalStorage({ addFiles }) {
         }
     },[addFiles])
 
+    const handleChange = (title) => {
+        setFilteredDataField(title);
+    }
+
     const handleClose = () => {
         setOpen(false);
         browserRedirect('/localStorage');
     }   
+
+    
+    const lowercasedFilterDataField = filteredDataField.toLowerCase();
+    let filteredDataFields = files.filter(item => {
+        return Object.keys(item).some(name =>
+            item['name'].toLowerCase().includes(lowercasedFilterDataField)
+        );
+    });
 
     return (
         <MobileView style={{ height: '100vh' }}>
@@ -102,7 +115,7 @@ export default function LocalStorage({ addFiles }) {
                 <HeaderWave color="#e8efff"/>
                 <h1 className="h1-font component-heading">Local Storage</h1>
                 <div style={{ padding: '0px 25px' }}>
-                    <SearchBar />
+                    <SearchBar handleChange={handleChange}/>
                 </div>
                 <div className="storage-option">
                     <div className="option-div">
@@ -124,7 +137,7 @@ export default function LocalStorage({ addFiles }) {
                 </div>
                 <div>
                     {
-                        files.map((file, index) => {
+                        filteredDataFields.map((file, index) => {
                             return (
                                 <Grid container key={index} style={{ margin: '15px 0px' }}>
                                     <Grid item xs={3} style={{ textAlign: 'center' }}>

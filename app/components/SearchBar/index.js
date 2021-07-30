@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     },
 });
 
-function SearchBar() {
+function SearchBar({handleChange}) {
 
     const classes = useStyles();
 
@@ -22,6 +22,7 @@ function SearchBar() {
             style={{ width: '100%' }}
             variant="outlined"
             className={"search-input"}
+            onChange={(e) => {handleChange(e.target.value)}}
             InputProps={{
                 startAdornment: (
                     <InputAdornment>
